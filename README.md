@@ -12,7 +12,6 @@
 
 ## Intermediate
 
-[Test Drive WordPress Application on a single Node Kubernetes Cluster]()
 [How to Build Kubernetes Cluster using CRI-containerd & Moby](http://collabnix.com/building-multi-node-kubernetes-cluster-using-linuxkit-cri-containerd/)
 [Getting Started with Multi-Node Kubernetes Cluster using LinuxKit](http://collabnix.com/getting-started-with-multi-node-kubernetes-cluster-using-linuxkit/)
 
