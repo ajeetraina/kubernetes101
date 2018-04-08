@@ -9,8 +9,7 @@ detailed information.
 
 ## Set up
 
-The current Kubernetes release (1.0.3) has a bug with the Vagrant provider that makes it 
-almost unusable. In the meantime, use a custom-built release package - 
+Use a custom-built release package - 
 [download here]() and extract the archive.
 
 ```
