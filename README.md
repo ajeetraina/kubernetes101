@@ -3,7 +3,7 @@
 
 [Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/blob/master/concept/day-1/core-concept.adoc)<br>
 [Day-2: Kubernetes on AWS](https://github.com/ajeetraina/kubernetes-aws-workshop)<br>
-[Day-3: Kubernetes on GCP](https://github.com/ajeetraina/kubernetes101/tree/master/GKE)<br>
+[Day-3: Kubernetes on GCP](https://github.com/ajeetraina/kubernetes101/blob/master/labs/kubernetes-gce-lab/README.md)<br>
 [Day-4: Kubernetes on Azure](https://github.com/ajeetraina/hands-on-with-kubernetes-azure)<br>
 [Day-5: Kubernetes on Vagrant](https://github.com/ajeetraina/vagrant-kubernetes-lab)<br>
 [Day-6: Kubernetes & Networking]()<br>
