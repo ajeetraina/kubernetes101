@@ -13,17 +13,18 @@
 [Day-10:Kubernetes in Production]<br>
 
 
-# Getting Started with Kubernetes
+# Kubernetes on Bare Metal/Cloud/IoT
 
 [Kubernetes on Google Cloud Engine](https://github.com/ajeetraina/kubernetes101/tree/master/GKE)<br>
 [Kubernetes on Azure]<br>
 [Kubernetes on AWS]<br>
+[Kubernetes on DO]<br>
 [Kubernetes on Docker for Mac]<br>
 [Kubernetes on PWD]<br>
 [Kubernetes on CentOS]<br>
 [Kubernetes on RHEL]<br>
 [Kubernetes on Ubuntu]<br>
-[Kubernetes on Debian]<br>
+[Kubernetes on Raspberry Pi 3]<br>
 [Kubernetes on Windows]<br>
 
 
