@@ -8,7 +8,7 @@
 [Day-5: Kubernetes on Raspberry Pi 3]<br>
 [Day-6: Kubernetes & CI-CD]<br>
 [Day-7: Advance Kubernetes Concepts]<br>
-[Day-8: Kubernetes on PWK]<br>
+[Day-8: Kubernetes on PWK](https://www.play-with-kubernetes.com)<br>
 [Day-9: Kubernetes on Docker for Mac]<br>
 [Day-10:Kubernetes in Production]<br>
 
