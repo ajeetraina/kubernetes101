@@ -4,14 +4,15 @@
 [Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/tree/master/concept/day-1)<br>
 [Day-2: Kubernetes on AWS](https://github.com/ajeetraina/kubernetes-aws-workshop)<br>
 [Day-3: Kubernetes on GCP]()<br>
-[Day-3: Kubernetes & Vagrant](https://github.com/ajeetraina/vagrant-kubernetes-lab)<br>
-[Day-4: Kubernetes & Networking]<br>
-[Day-5: Kubernetes & Storage]<br>
-[Day-6: Kubernetes on Raspberry Pi 3]<br>
-[Day-7: Kubernetes & CI-CD]<br>
-[Day-8: Advance Kubernetes Concepts]<br>
-[Day-9: Kubernetes on PWK](http://play-with-kubernetes.com)<br>
-[Day-10: Kubernetes & Security]<br>
+Day-4: Kubernetes on Azure]()<br>
+[Day-4: Kubernetes on Vagrant](https://github.com/ajeetraina/vagrant-kubernetes-lab)<br>
+[Day-5: Kubernetes & Networking]()<br>
+[Day-6: Kubernetes & Storage]()<br>
+[Day-7: Kubernetes on Raspberry Pi 3]()<br>
+[Day-8: Kubernetes & CI-CD]()<br>
+[Day-9: Advance Kubernetes Concepts]()<br>
+[Day-10: Kubernetes on PWK](http://play-with-kubernetes.com)<br>
+
 
 
 
