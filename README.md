@@ -12,26 +12,6 @@
 [Day-9: Kubernetes & CI-CD]()<br>
 [Day-10: Advance Kubernetes Concepts]()<br>
 
-
-
-
-
-# Kubernetes on Bare Metal/Cloud/IoT
-
-[Kubernetes on Google Cloud Engine](https://github.com/ajeetraina/kubernetes101/tree/master/GKE)<br>
-[Kubernetes on Azure]<br>
-[Kubernetes on AWS]<br>
-[Kubernetes on DO]<br>
-[Kubernetes on Docker for Mac]<br>
-[Kubernetes on PWD]<br>
-[Kubernetes on CentOS]<br>
-[Kubernetes on RHEL]<br>
-[Kubernetes on Ubuntu]<br>
-[Kubernetes on Raspberry Pi 3]<br>
-[Kubernetes on Windows]<br>
-
-
-
 # Kubernetes on Collabnix.com
 
 [5 Minutes to Bootstrap Kubernetes Cluster on GKE using Docker for Mac 18.03.0](http://collabnix.com/bootstrapping-kubernetes-cluster-using-docker-for-mac-18-03-0-ce-edition/)<br>
