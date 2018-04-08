@@ -3,14 +3,15 @@
 
 [Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/tree/master/concept/day-1)<br>
 [Day-2: Installation on Cloud Platforms]<br>
-[Day-3: Kubernetes & Networking]<br>
-[Day-4: Kubernetes & Storage]<br>
-[Day-5: Kubernetes on Raspberry Pi 3]<br>
-[Day-6: Kubernetes & CI-CD]<br>
-[Day-7: Advance Kubernetes Concepts]<br>
-[Day-8: Kubernetes on PWK](http://play-with-kubernetes.com)<br>
-[Day-9: Kubernetes on Docker for Mac]<br>
-[Day-10:Kubernetes in Production]<br>
+[Day-3: Kubernetes & Vagrant]<br>
+[Day-4: Kubernetes & Networking]<br>
+[Day-5: Kubernetes & Storage]<br>
+[Day-6: Kubernetes on Raspberry Pi 3]<br>
+[Day-7: Kubernetes & CI-CD]<br>
+[Day-8: Advance Kubernetes Concepts]<br>
+[Day-9: Kubernetes on PWK](http://play-with-kubernetes.com)<br>
+[Day-10: Kubernetes & Security]<br>
+
 
 
 # Kubernetes on Bare Metal/Cloud/IoT
