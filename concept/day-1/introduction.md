@@ -1,4 +1,4 @@
-# Demystifying Kubernetes Architecture
+# Day #1
 
 ## What is Kubernetes?
 
