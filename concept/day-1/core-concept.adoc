@@ -1,4 +1,4 @@
-= Kubernetes Developer Concepts
+= Kubernetes Developer Concepts =
 :toc:
 :imagesdir: ../images
 
