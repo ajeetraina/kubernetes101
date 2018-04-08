@@ -2,15 +2,10 @@
 
 # Getting Started with Kubernetes
 
-## Kubernetes on Google Cloud
-
-[5 Minutes to Bootstrap Kubernetes Cluster on GKE using Docker for Mac 18.03.0](http://collabnix.com/bootstrapping-kubernetes-cluster-using-docker-for-mac-18-03-0-ce-edition/)<br>
-
-
 
 ## Beginners
 
-
+[5 Minutes to Bootstrap Kubernetes Cluster on GKE using Docker for Mac 18.03.0](http://collabnix.com/bootstrapping-kubernetes-cluster-using-docker-for-mac-18-03-0-ce-edition/)<br>
 [Context Switching Made Easy under Kubernetes powered Docker for Mac 18.02.0](http://collabnix.com/namespace-context-toggling-made-easy-under-docker-for-mac-18-02-release/)<br>
 [2-minutes to Kubernetes Cluster on Docker for Mac 18.01 using Swarm CLI](http://collabnix.com/running-kubernetes-cluster-on-docker-for-mac-18-01-using-swarm-cli/)<br>
 [3 Minutes to Single Node Kubernetes cluster on Docker for Mac Platform](http://collabnix.com/3-minutes-to-single-node-kubernetes-cluster-on-docker-for-mac-platform/)<br>
