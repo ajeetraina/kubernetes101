@@ -3,7 +3,7 @@
 
 [Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/tree/master/concept/day-1)<br>
 [Day-2: Installation on Cloud Platforms]<br>
-[Day-3: Kubernetes & Vagrant]<br>
+[Day-3: Kubernetes & Vagrant](https://github.com/ajeetraina/kubernetes101/blob/master/labs/vagrant/README.md)<br>
 [Day-4: Kubernetes & Networking]<br>
 [Day-5: Kubernetes & Storage]<br>
 [Day-6: Kubernetes on Raspberry Pi 3]<br>
