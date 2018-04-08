@@ -1,7 +1,7 @@
 
 # Learn Kubernetes in 10 Days
 
-[Day-1: Concepts]()<br>
+[Day-1: Concepts](https://github.com/ajeetraina/kubernetes101/tree/master/concept/day-1)<br>
 
 # Getting Started with Kubernetes
 
