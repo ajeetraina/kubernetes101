@@ -1,7 +1,7 @@
 
 # Learn Kubernetes in 10 Days
 
-[Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/tree/master/concept/day-1)<br>
+[Day-1: Basic Concepts](https://github.com/ajeetraina/kubernetes101/blob/master/concept/day-1/core-concept.adoc)<br>
 [Day-2: Kubernetes on AWS](https://github.com/ajeetraina/kubernetes-aws-workshop)<br>
 [Day-3: Kubernetes on GCP](https://github.com/ajeetraina/kubernetes101/tree/master/GKE)<br>
 [Day-4: Kubernetes on Azure](https://github.com/ajeetraina/hands-on-with-kubernetes-azure)<br>
