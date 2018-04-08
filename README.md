@@ -29,7 +29,7 @@
 
 
 
-## Beginners
+## Kubernetes on Collabnix.com
 
 [5 Minutes to Bootstrap Kubernetes Cluster on GKE using Docker for Mac 18.03.0](http://collabnix.com/bootstrapping-kubernetes-cluster-using-docker-for-mac-18-03-0-ce-edition/)<br>
 [Context Switching Made Easy under Kubernetes powered Docker for Mac 18.02.0](http://collabnix.com/namespace-context-toggling-made-easy-under-docker-for-mac-18-02-release/)<br>
@@ -38,14 +38,8 @@
 [When Kubernetes Meet Docker Swarm for the First time under Docker for Mac 17.12 Release](http://collabnix.com/integration-of-docker-swarm-kubernetes-under-docker-for-mac-platform/) <br>
 [A First Look at Kubernetes Integrated Docker For Mac Platform](http://collabnix.com/a-first-look-at-kubernetes-integrated-docker-for-mac-platform/)<br>
 [When Moby Meet Kubernetes for the first time](http://collabnix.com/when-linuxkit-meet-kubernetes-for-the-first-time/)<br>
-
-
-
-
-## Intermediate
-
 [How to Build Kubernetes Cluster using CRI-containerd & Moby](http://collabnix.com/building-multi-node-kubernetes-cluster-using-linuxkit-cri-containerd/) <br>
 [Getting Started with Multi-Node Kubernetes Cluster using LinuxKit](http://collabnix.com/getting-started-with-multi-node-kubernetes-cluster-using-linuxkit/)
 
 
-## Expert
+
