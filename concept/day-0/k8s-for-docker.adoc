@@ -1,1 +1,106 @@
 ## Kubernetes for Docker User
+
+If you are a Docker user and recently planned to try your hands on Kubernetes concepts, this is the right place to be. Let me get you started quickly.
+
+# A Simple Docker Image
+
+## Tested Environment
+
+- [Docker for Mac](http://collabnix.com/a-first-look-at-kubernetes-integrated-docker-for-mac-platform/)<br>
+- [GKE Cluster](https://github.com/ajeetraina/docker101/blob/master/play-with-kubernetes/gke-d4m.md)<br>
+
+
+## Clone the Repository
+
+```
+git clone https://github.com/ajeetraina/hellowhale
+```
+
+## Building the Image
+
+```
+docker build -t hellowhale .
+```
+
+## Running the Docker Container
+
+```
+docker run -d -p 80:80 --name hellowhale hellowhale
+```
+
+## Tagging the Image
+
+```
+docker tag hellowhale ajeetraina/hellowhale
+```
+
+## Pushing it to Dockerhub
+
+```
+docker login
+```
+
+```
+docker push ajeetraina/hellowhale
+```
+
+## Verifying the URL
+
+```
+open localhost:80
+```
+
+## How to Deploy the same Docker Container on Kubernetes
+
+```
+kubectl get nodes
+```
+
+```
+NAME                                      STATUS    ROLES     AGE       VERSION
+gke-k8s-lab1-default-pool-b2aaa29b-2gzh   Ready     <none>    16h       v1.8.8-gke.0
+gke-k8s-lab1-default-pool-b2aaa29b-qpc7   Ready     <none>    16h       v1.8.8-gke.0
+gke-k8s-lab1-default-pool-b2aaa29b-w904   Ready     <none>    16h       v1.8.8-gke.0
+```
+
+```
+kubectl create deployment hellowhale --image ajeetraina/hellowhale
+deployment "hellowhale" created
+```
+
+```
+kubectl get deploy
+```
+
+```
+NAME         DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+hellowhale   1         1         1            1           10s
+```
+
+```
+kubectl get po
+```
+
+```
+NAME                          READY     STATUS    RESTARTS   AGE
+hellowhale-6d46976f9b-bswrc   1/1       Running   0          16s
+e=LoadBalancer  >  kubectl expose deployment/hellowhale --port=80 --name=hellowhalesvc --typ
+service "hellowhalesvc" exposed
+```
+
+```
+kubectl get svc
+NAME            TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+hellowhalesvc   LoadBalancer   10.15.244.72   <pending>     80:30355/TCP   16s
+kubernetes      ClusterIP      10.15.240.1    <none>        443/TCP        15h
+```
+
+Wait for sometime till Externm-IP appear for hellowhalesvc.
+
+```
+ubectl get svc
+NAME            TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE
+hellowhalesvc   LoadBalancer   10.15.244.72   35.201.152.160   80:30355/TCP   1m
+kubernetes      ClusterIP      10.15.240.1    <none>           443/TCP        15h
+```
+There you go. GO to the browser and type 35.201.152.160 to open up fancy hellowhale page.
