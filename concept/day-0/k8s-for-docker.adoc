@@ -97,7 +97,7 @@ kubernetes      ClusterIP      10.15.240.1    <none>        443/TCP        15h
 Wait for sometime till Externm-IP appear for hellowhalesvc.
 
 ```
-ubectl get svc
+kubectl get svc
 NAME            TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)        AGE
 hellowhalesvc   LoadBalancer   10.15.244.72   35.201.152.160   80:30355/TCP   1m
 kubernetes      ClusterIP      10.15.240.1    <none>           443/TCP        15h
