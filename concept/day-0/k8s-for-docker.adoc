@@ -6,8 +6,8 @@ If you are a Docker user and recently planned to try your hands on Kubernetes co
 
 ## Tested Environment
 
-- [Docker for Mac](http://collabnix.com/a-first-look-at-kubernetes-integrated-docker-for-mac-platform/) <br>
-- [GKE Cluster](https://github.com/ajeetraina/docker101/blob/master/play-with-kubernetes/gke-d4m.md) <br>
+- GKE Cluster 
+- Docker for Mac
 
 
 ## Clone the Repository
