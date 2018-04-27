@@ -25,5 +25,9 @@
 [How to Build Kubernetes Cluster using CRI-containerd & Moby](http://collabnix.com/building-multi-node-kubernetes-cluster-using-linuxkit-cri-containerd/) <br>
 [Getting Started with Multi-Node Kubernetes Cluster using LinuxKit](http://collabnix.com/getting-started-with-multi-node-kubernetes-cluster-using-linuxkit/)
 
+# Kubernetes & OpenFaas
+
+[Deploying OpenFaas on K8s]()<br>
+
 
 
