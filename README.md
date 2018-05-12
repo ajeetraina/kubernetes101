@@ -1,7 +1,7 @@
 
 # Learn Kubernetes in 10 Days
 
-[Day-0: Kubernetes for Docker Users](https://github.com/ajeetraina/kubernetes101/blob/master/concept/day-0/k8s-for-docker.adoc)<br>
+[Day-0: What is Kubernetes? What are its components](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/README.md)<br>
 [Day-1: Getting Started with Pods, Services & Replicasets](https://github.com/ajeetraina/kubernetes101/blob/master/concept/day-1/getting-started.adoc)<br>
 [Day-2: Kubernetes on AWS](https://github.com/ajeetraina/kubernetes-aws-workshop)<br>
 [Day-3: Kubernetes on GCP](https://github.com/ajeetraina/kubernetes101/blob/master/labs/kubernetes-gce-lab/README.md)<br>
