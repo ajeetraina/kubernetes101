@@ -35,7 +35,7 @@ Any developer can package up applications and deploy them on Kubernetes with bas
 
 ## Kubelet
 
-[alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-kubelet.png)
+![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-kubelet.png)
 
 - Primary node agent
 - Ensures that containers are running and healthy
