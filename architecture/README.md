@@ -99,3 +99,7 @@ Any developer can package up applications and deploy them on Kubernetes with bas
 - The deployment gets a Public IP address assigned
 - The service is available at http(s)://:<80||42>/
 - Traffic is load balanced between the Pods of the deployment
+
+## Credits:
+- https://blog.risingstack.com/what-is-kubernetes-how-to-get-started/
+
