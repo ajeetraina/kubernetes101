@@ -6,16 +6,37 @@ Kubernetes can speed up the development process by making easy, automated deploy
 
 Any developer can package up applications and deploy them on Kubernetes with basic Docker knowledge.
 
-## What is K8s made up of?
+# What is K8s made up of?
 
-#Kubectl:
+## Kubectl:
 
-a CLI tool for Kubernetes
+- A CLI tool for Kubernetes
+
+![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-kubectl.png)
 
 
 
-#Master Node:
+## Master Node:
 
-The main machine that controls the nodes
-Main entrypoint for all administrative tasks
-It handles the orchestration of the worker nodes
+![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-kubelet.png)
+
+- The main machine that controls the nodes
+- Main entrypoint for all administrative tasks
+- It handles the orchestration of the worker nodes
+
+## Worker Node
+
+![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-worker-node.png)
+
+- It is a worker machine in Kubernetes (used to be known as minion)
+- This machine performs the requested tasks. Each Node is controlled by the Master Node
+- Runs containers inside pods
+- This is where the Docker engine runs and takes care of downloading images and starting containers
+
+## Kubelet
+
+[alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-kubelet.png)
+
+- Primary node agent
+- Ensures that containers are running and healthy
+
