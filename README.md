@@ -29,5 +29,9 @@
 
 [Deploying OpenFaas on K8s]()<br>
 
+# Kubernetes Stuffs
+
+[Abstract - Kubernetes]()<br>
+
 
 
