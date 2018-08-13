@@ -26,8 +26,8 @@ Click on Add Instances to setup first k8s node cluster
 ## Cloning the Repository
 
 ```
-git clone https://github.com/ajeetraina/docker101/
-cd docker101/play-with-kubernetes
+git clone https://github.com/ajeetraina/kubernetes101/
+cd kubernetes101/install
 
 ```
 
