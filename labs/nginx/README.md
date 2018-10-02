@@ -12,6 +12,17 @@ node5     Ready     <none>    14m       v1.10.2
 
 ```
 
+
+
+## Running Nginx having 4 Replicas
+
+```
+kubectl run nginx --image=nginx:latest --replicas=4
+```
+
+## Verifying K8s Pods Up and Running
+
+
 ```
 [node1 ~]$ kubectl get po
 NAME                     READY     STATUS    RESTARTS   AGE
@@ -23,11 +34,6 @@ nginx-5db977d67c-z5r45   1/1       Running   0          2m
 
 ```
 
-## Running Nginx having 4 Replicas
-
-```
-kubectl run nginx --image=nginx:latest --replicas=4
-```
 
 ## Watch the pods
 
