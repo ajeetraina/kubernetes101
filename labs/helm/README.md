@@ -15,8 +15,9 @@ node5     NotReady   <none>    8s        v1.11.3
 ```
 [node1 ~]$ kubectl get nodes -o json |
 >       jq ".items[] | {name:.metadata.name} + .status.capacity"
-```
 
+```
+```
 {
   "name": "node1",
   "cpu": "8",
