@@ -166,7 +166,42 @@ For more information on running Prometheus, visit:
 https://prometheus.io/
 ```
 
+```
+[node1 ~]$ kubectl get all
+NAME                                                             READY     STATUS    RESTARTS   AGE
+pod/excited-elk-prometheus-alertmanager-68f4f57c97-wrfjz         0/2       Pending   0          3m
+pod/excited-elk-prometheus-kube-state-metrics-858d44dfdc-vt4wj   1/1       Running   0          3m
+pod/excited-elk-prometheus-node-exporter-7bjqc                   1/1       Running   0          3m
+pod/excited-elk-prometheus-node-exporter-gbcd7                   1/1       Running   0          3m
+pod/excited-elk-prometheus-node-exporter-tk56q                   1/1       Running   0          3m
+pod/excited-elk-prometheus-node-exporter-tkk9b                   1/1       Running   0          3m
+pod/excited-elk-prometheus-pushgateway-58bfd54d6d-m4n69          1/1       Running   0          3m
+pod/excited-elk-prometheus-server-5958586794-b97xn               0/2       Pending   0          3m
 
+NAME                                                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/excited-elk-prometheus-alertmanager         ClusterIP   10.106.159.46   <none>        80/TCP     3m
+service/excited-elk-prometheus-kube-state-metrics   ClusterIP   None            <none>        80/TCP     3m
+service/excited-elk-prometheus-node-exporter        ClusterIP   None            <none>        9100/TCP   3m
+service/excited-elk-prometheus-pushgateway          ClusterIP   10.106.88.15    <none>        9091/TCP   3m
+service/excited-elk-prometheus-server               ClusterIP   10.107.15.64    <none>        80/TCP     3m
+service/kubernetes                                  ClusterIP   10.96.0.1       <none>        443/TCP    37m
+
+NAME                                                  DESIRED   CURRENT   READY     UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
+daemonset.apps/excited-elk-prometheus-node-exporter   4         4         4         4            4           <none>          3m
+
+NAME                                                        DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/excited-elk-prometheus-alertmanager         1         1         1            0           3m
+deployment.apps/excited-elk-prometheus-kube-state-metrics   1         1         1            1           3m
+deployment.apps/excited-elk-prometheus-pushgateway          1         1         1            1           3m
+deployment.apps/excited-elk-prometheus-server               1         1         1            0           3m
+
+NAME                                                                   DESIRED   CURRENT   READY     AGE
+replicaset.apps/excited-elk-prometheus-alertmanager-68f4f57c97         1         1         0         3m
+replicaset.apps/excited-elk-prometheus-kube-state-metrics-858d44dfdc   1         1         1         3m
+replicaset.apps/excited-elk-prometheus-pushgateway-58bfd54d6d          1         1         1         3m
+replicaset.apps/excited-elk-prometheus-server-5958586794               1         1         0         3m
+[node1 ~]$
+```
 
 
 
