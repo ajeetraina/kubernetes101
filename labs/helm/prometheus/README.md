@@ -1,4 +1,4 @@
-# Installing Prometheus using Helm
+# Installing Prometheus using Helm on Play with Kubernetes Platform
 
 ```
 [node1 ~]$ helm search prometheus
