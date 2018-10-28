@@ -36,33 +36,46 @@ Update Complete. ⎈ Happy Helming!⎈
 
 
 ```
-$helm inspect stable/prometheus
+$helm install stable/prometheus
+``
 
-##
-  name: server
-
-  ## Prometheus server container image
-  ##
-  image:
- ...
- 
- ```
- 
- ```
- [node1 ~]$ helm reset --force
-Tiller (the Helm server-side component) has been uninstalled from your Kubernetes Cluster.
+This will throw error.
+```
+namespaces "default" is forbidden: User "system:serviceaccount:kube-system:default" cannot get namespaces in the namespace "default"
 ```
 
-## Creating RBAC config file
+How to fix?
 
 ```
-[node1 ~]$ helm init --service-account tiller --upgrade -i registry.cn-hangzhou.aliyuncs.com/google_containers/tiller:v2.7.0 --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
-$HELM_HOME has been configured at /root/.helm.
-
-Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
-
-Please note: by default, Tiller is deployed with an insecure 'allow unauthenticated users' policy.
-To prevent this, run `helm init` with the --tiller-tls-verify flag.
-For more information on securing your installation see: https://docs.helm.sh/using_helm/#securing-your-helm-installation
-Happy Helming!
+kubectl create serviceaccount --namespace kube-system tiller
 ```
+```
+  serviceaccount "tiller" created
+```
+
+```
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+```
+
+```
+clusterrolebinding "tiller-cluster-rule" created
+```
+
+```
+kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}' 
+```
+
+```
+deployment "tiller-deploy" patched
+```
+
+```
+[node1 ~]$ helm list
+NAME            REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
+excited-elk     1               Sun Oct 28 10:00:02 2018        DEPLOYED        prometheus-7.3.4        2.4.3           default
+```
+
+
+
+
+
