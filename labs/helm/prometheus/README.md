@@ -26,6 +26,8 @@ stable/mariadb                          5.2.2           10.1.36         Fast, re
 ```
 
 ```
+$helm inspect stable/prometheus
+
 ##
   name: server
 
