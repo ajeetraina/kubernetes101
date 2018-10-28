@@ -67,7 +67,104 @@ NAME            REVISION        UPDATED                         STATUS          
 excited-elk     1               Sun Oct 28 10:00:02 2018        DEPLOYED        prometheus-7.3.4        2.4.3           default
 ```
 
+```
+[node1 ~]$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Skip local chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈
+[node1 ~]$ helm install stable/prometheus
+NAME:   excited-elk
+LAST DEPLOYED: Sun Oct 28 10:00:02 2018
+NAMESPACE: default
+STATUS: DEPLOYED
 
+RESOURCES:
+==> v1beta1/DaemonSet
+NAME                                  AGE
+excited-elk-prometheus-node-exporter  1s
+
+==> v1/Pod(related)
+
+NAME                                                        READY  STATUS             RESTARTS  AGE
+excited-elk-prometheus-node-exporter-7bjqc                  0/1    ContainerCreating  0         1s
+excited-elk-prometheus-node-exporter-gbcd7                  0/1    ContainerCreating  0         1s
+excited-elk-prometheus-node-exporter-tk56q                  0/1    ContainerCreating  0         1s
+excited-elk-prometheus-node-exporter-tkk9b                  0/1    ContainerCreating  0         1s
+excited-elk-prometheus-alertmanager-68f4f57c97-wrfjz        0/2    Pending            0         1s
+excited-elk-prometheus-kube-state-metrics-858d44dfdc-vt4wj  0/1    ContainerCreating  0         1s
+excited-elk-prometheus-pushgateway-58bfd54d6d-m4n69         0/1    ContainerCreating  0         1s
+excited-elk-prometheus-server-5958586794-b97xn              0/2    Pending            0         1s
+
+==> v1/ConfigMap
+
+NAME                                 AGE
+excited-elk-prometheus-alertmanager  1s
+excited-elk-prometheus-server        1s
+
+==> v1/ServiceAccount
+excited-elk-prometheus-alertmanager        1s
+excited-elk-prometheus-kube-state-metrics  1s
+excited-elk-prometheus-node-exporter       1s
+excited-elk-prometheus-pushgateway         1s
+excited-elk-prometheus-server              1s
+
+==> v1beta1/ClusterRole
+excited-elk-prometheus-kube-state-metrics  1s
+excited-elk-prometheus-server              1s
+
+==> v1beta1/Deployment
+excited-elk-prometheus-alertmanager        1s
+excited-elk-prometheus-kube-state-metrics  1s
+excited-elk-prometheus-pushgateway         1s
+excited-elk-prometheus-server              1s
+
+==> v1/PersistentVolumeClaim
+excited-elk-prometheus-alertmanager  1s
+excited-elk-prometheus-server        1s
+
+==> v1beta1/ClusterRoleBinding
+excited-elk-prometheus-kube-state-metrics  1s
+excited-elk-prometheus-server              1s
+
+==> v1/Service
+excited-elk-prometheus-alertmanager        1s
+excited-elk-prometheus-kube-state-metrics  1s
+excited-elk-prometheus-node-exporter       1s
+excited-elk-prometheus-pushgateway         1s
+excited-elk-prometheus-server              1s
+
+
+NOTES:
+The Prometheus server can be accessed via port 80 on the following DNS name from within your cluster:
+excited-elk-prometheus-server.default.svc.cluster.local
+
+
+Get the Prometheus server URL by running these commands in the same shell:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
+  kubectl --namespace default port-forward $POD_NAME 9090
+
+
+The Prometheus alertmanager can be accessed via port 80 on the following DNS name from within your cluster:
+excited-elk-prometheus-alertmanager.default.svc.cluster.local
+
+
+Get the Alertmanager URL by running these commands in the same shell:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=alertmanager" -o jsonpath="{.items[0].metadata.name}")
+  kubectl --namespace default port-forward $POD_NAME 9093
+
+
+The Prometheus PushGateway can be accessed via port 9091 on the following DNS name from within your cluster:
+excited-elk-prometheus-pushgateway.default.svc.cluster.local
+
+
+Get the PushGateway URL by running these commands in the same shell:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=pushgateway" -o jsonpath="{.items[0].metadata.name}")
+  kubectl --namespace default port-forward $POD_NAME 9091
+
+For more information on running Prometheus, visit:
+https://prometheus.io/
+```
 
 
 
