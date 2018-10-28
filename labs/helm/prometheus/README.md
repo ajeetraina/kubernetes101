@@ -25,6 +25,16 @@ stable/mariadb                          5.2.2           10.1.36         Fast, re
 [node1 ~]$
 ```
 
+
+```
+[node1 ~]$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Skip local chart repository
+...Successfully got an update from the "stable" chart repository
+Update Complete. ⎈ Happy Helming!⎈
+```
+
+
 ```
 $helm inspect stable/prometheus
 
