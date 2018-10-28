@@ -47,3 +47,11 @@ Get the Kubernetes Dashboard URL by running:
 
 [node1 ~]$
 ```
+
+```
+[node1 ~]$ helm list
+NAME            REVISION        UPDATED                         STATUS          CHART                           APP VERSION     NAMESPACE
+excited-elk     1               Sun Oct 28 10:00:02 2018        DEPLOYED        prometheus-7.3.4                2.4.3           default
+loopy-anteater  1               Sun Oct 28 10:06:29 2018        DEPLOYED        kubernetes-dashboard-0.7.5      1.10.0          default
+[node1 ~]$
+```
