@@ -25,6 +25,7 @@ stable/mariadb                          5.2.2           10.1.36         Fast, re
 [node1 ~]$
 ```
 
+## Update the Repo
 
 ```
 [node1 ~]$ helm repo update
@@ -34,23 +35,20 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈
 ```
 
+## Installing Prometheus
 
 ```
 $helm install stable/prometheus
-``
-
-This will throw error.
 ```
+
+Error:
 namespaces "default" is forbidden: User "system:serviceaccount:kube-system:default" cannot get namespaces in the namespace "default"
-```
 
-How to fix?
+
+## How to fix?
 
 ```
 kubectl create serviceaccount --namespace kube-system tiller
-```
-```
-  serviceaccount "tiller" created
 ```
 
 ```
@@ -58,22 +56,18 @@ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admi
 ```
 
 ```
-clusterrolebinding "tiller-cluster-rule" created
-```
-
-```
 kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}' 
 ```
 
-```
-deployment "tiller-deploy" patched
-```
+## Listing Helm
 
 ```
 [node1 ~]$ helm list
 NAME            REVISION        UPDATED                         STATUS          CHART                   APP VERSION     NAMESPACE
 excited-elk     1               Sun Oct 28 10:00:02 2018        DEPLOYED        prometheus-7.3.4        2.4.3           default
 ```
+
+
 
 
 
