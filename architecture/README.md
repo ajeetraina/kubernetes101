@@ -66,7 +66,6 @@ Any developer can package up applications and deploy them on Kubernetes with bas
 
 ![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-deployment%20(1).png)
 
-![alt text](https://github.com/ajeetraina/kubernetes101/blob/master/architecture/kubernetes-deployment%20(1).png)
 
 ## Secret:
 
