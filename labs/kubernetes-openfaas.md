@@ -2,7 +2,7 @@
 
 ## Pre-requisite:
 
-- Docker for Mac 18.05.0 RC1
+- Docker for Mac 18.05.0 RC 1
 -Enable Kubernetes
 
 ## Cloning the Fass-netes Repository
