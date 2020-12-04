@@ -18,7 +18,7 @@ We recommend you start with one of our Beginners Guides, and then move to interm
 
 To get started with Kubernetes, follow the below steps:
 
--  Open https://labs.play-with-kubernetes.com on your browser
+-  Open https://labs.play-with-k8s.com/ on your browser
 
 
 Click on Add Instances to setup first k8s node cluster
