@@ -131,11 +131,13 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   1h
 [Day-3: Kubernetes on GCP](https://github.com/ajeetraina/kubernetes101/blob/master/labs/kubernetes-gce-lab/README.md)<br>
 [Day-4: Kubernetes on Azure](https://github.com/ajeetraina/hands-on-with-kubernetes-azure)<br>
 [Day-5: Kubernetes on Vagrant](https://github.com/ajeetraina/vagrant-kubernetes-lab)<br>
-[Day-6: Kubernetes & Networking]()<br>
-[Day-7: Kubernetes & Storage]()<br>
-[Day-8: Kubernetes on Raspberry Pi 3]()<br>
-[Day-9: Kubernetes & CI-CD]()<br>
-[Day-10: Advance Kubernetes Concepts]()<br>
+[Day-6: Kubernetes & Networking](https://collabnix.github.io/kubelabs/ClusterNetworking101/#Cluster-Networking)<br>
+[Day-7: Kubernetes & Network Policy](https://collabnix.github.io/kubelabs/Network_Policies101/)<br>
+[Day-8: Kubernetes on Monitoring](https://collabnix.github.io/kubelabs/Monitoring101/#Monitoring-in-Kubernetes)<br>
+[Day-9: Kubernetes & Service Catalog](https://collabnix.github.io/kubelabs/ServiceCatalog101/what-is-service-catalog.html)<br>
+[Day-10: Kubernetes & RBAC](https://collabnix.github.io/kubelabs/RBAC101/#role-based-access-control-rbac)<br>
+[Day-11: Kubernetes & Ingress](https://collabnix.github.io/kubelabs/Ingress101/)<br>
+[Day-12: Kubernetes and Jobs](https://collabnix.github.io/kubelabs/Jobs101/#creating-your-first-kubernetes-job)<br>
 
 # Kubernetes on Collabnix.com
 
